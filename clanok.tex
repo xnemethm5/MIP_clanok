@@ -23,7 +23,7 @@
 	{\small \texttt{xnemethm5@stuba.sk}}
 	}
 
-\date{\small 24. október 2021} % upravte
+\date{\small 4. November 2021} % upravte
 
 
 
@@ -32,7 +32,7 @@
 \maketitle
 
 \begin{abstract}
-\ldots
+Žijeme v dobe, kde sa človek snaží implementovať modernizáciu do takmer všetkého na čo si len dokážeme spomenúť, respektíve, snaží sa nám zjednodušiť každodenný život. Mňa konkrétne zaujala téma inteligentných domácností a ich zabezpečenia. V mojej práci by som Vám chcel priblížiť systém IoT (Internet of Things), ktorý je známy ako svet pripojených zariadení, fyzických objektov, ktoré obsahujú senzor a softvérové komponenty. Taktiež by som sa chcel venovať analýze a celkovému zabezpečeniu domácností proti hackerom, data minerom a samozrejme aj voči klasickým zlodejom.
 \end{abstract}
 
 
@@ -43,128 +43,56 @@ Inteligentné domácnosti, ich softvér a zabezpečenie je téma, ktorú som si 
 Moju prácu som rozdelil na tri veľké časti, konkrétne tieto : smart domácnosti, ktoré nájdeme v časti~\ref{domácnosti}, IoT (Internet of Things) nachádzajúce sa v časti~\ref{IoT}  a zabezpečenie, ktoré sa nachádza v časti~\ref{zabezpečenie}. V každej z týchto tém sa budem venovať konkrétnej problematike, ako napríklad v časti~\ref{domácnosti} (smart domácnosti) si bližšie rozoberieme čo vlastne sú inteligentné domácnosti, aké výhody a nevýhody majú, zariadenia, pomocou ktorých dokážu inteligentné domácnosti fungovať a v neposlednom rade celkové zhodnotenie. V časti~\ref{IoT} (Internet of Things) budem sústrediť moju pozornosť na základné zadefinovanie pojmu IoT, princíp fungovania tohto systému, možnosti využitia a implementácia práve v inteligentných domácnostiach. 
 Posledná časť~\ref{zabezpečenie} (zabezpečenie) bude venovaná funkcií, výhodam a nevýhodam, druhom a sppôsobom zabezpečenia a samozrejme nástrojom, ktoré realizujú samotné zabezpečenie.
 
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
 
 \section{Smart domácnosti}\label{domácnosti}
-Nejaký text a teraz odaz~\ref{domacnosti:využitie} pokračovanie textu
-Nejaký text a teraz odaz~\ref{domacnosti:plusy} pokračovanie textu
-Nejaký text a teraz odaz~\ref{domacnosti:zariadenia} pokračovanie textu
-Nejaký text a teraz odaz~\ref{domacnosti:zhodnotenie} pokračovanie textu
 
-\subsection{Využitie}\label{domacnosti:využitie}
-dasdad
+Inteligentné domácnosti sú ľudské príbytky obohatené o modernú techniku. Zväčša sú čiastočne, môžu však byť aj plne ovládateľné modernými technológiami a dajú sa rôzne využiť~\ref{domacnosti:využitie}. Pri ovládaní nám dopomáha či už hlasový asistent, mobilné zariadenie, laptop, desktop, tablet alebo dalšie ovládače. Z technického pohľadu je inteligentná domácnosť jeden veľký celok, respektíve sieť, do ktorej patrí mnoho rozličných prvkov, ktoré vykonávajú rôzne činnosti. Táto sieť musí fungovať bezchybne, pretože už len pri malej závade môže nastať domino efekt a celá domácnosť z technického pohľadu skolabuje. Má veľa výhod, avšak musíme počítať aj s nevýhodami, ktoré si porovnáme v podsekcií~\ref{domacnosti:plusy}. Inteligentné domácnosti sa rok, čo rok posúvajú rýchlym tempom vpred, stručne ich zhodnotíme~\ref{domacnosti:zhodnotenie}.
+
+\subsection{Funkcie a zariadenia}\label{domacnosti:využitie}
+
+Smart domácnosti majú jedno hlavné využitie a to je zjednodušiť a spríjemniť bývanie v nich. Existuje však mnoho spôsobov ako využívať schopnosti inteligentých domácností. Bývanie sa stáva inteligentným v momente kedy je prepojené so sieťou, je to podmienka, avšak aj minimálna požiadavka oproti všetkému čo môže byť súčasťou tejto siete. Najčastejšie býva zaimplementované do smart domácností veľké množstvo senzorov, či už je to pohybový senzor, senzor teploty, svetla, rýchlosti a kvality vzduchu a podobne.  Po nich nasleduje inteligentné nasvetlovanie, vykurovanie, vetranie. Taktiež nesmieme zabudnúť na inteligentnú bielu a čiernu techniku ako napríklad práčka, sušička, umývačka riadu, chladnička, vysávač, televízia, tablet, mobilné zariadenia a ďalšie. 
+
 \subsection{Klady a zápory}\label{domacnosti:plusy}
 
-\subsection{Využívané zariadenia}\label{domacnosti:zariadenia}
+Klady a zápory je možné nájsť pri všetkom na čo si len zmyslíme, nie je tomu ináč ani pri inteligentných domácnostiach. Začal by som tým pozitívnym, v prvom rade je mnoho vecí, ktoré musíme v domácnosti robiť manuálne, avšak vďaka smart domácnostiam a automatizácií to už tak nemusí byť. Ako príklad by som uviedol nasvetlovanie a kontrola teploty. Počas horúcich letných dní dokáže byť v miestnosti poriadne horúco, avšak vďáka automatickým vonkajším roletám tomu môžeme jednoducho predísť. Senzor sledujúci teplotu rozpozná výchylku v teplote a vydá impulz, pomocou ktorého sa spustia rolety a tým sa zníži teplota v miestnosti. Na druhej strane tu máme tie menej pozitívne vlastnosti a to konkrétne zápory. Najväčšou nevýhodou inteligentných domácností je závislosť či už od elektrickej energie alebo internetu. Pri výpadku elektriny je celá inteligentná domácnosť znefunkčnená, jednoduchým riešením by bol záložný zdroj elektrickej energie, avšak to nie je bežným riešením. Ďalšou nevýhodou je chybný systém, kde môže ako som už spomínal nastať domino efekt a celá sieť skolabuje.
 
 \subsection{Zhodnotenie}\label{domacnosti:zhodnotenie}
 
+Ako by som zhodnotil inteligentné domácnosti ? Pre mňa ako človeka, ktorého nesmierne fascinujú a zaujímajú moderné technológie je to úžastná téma. Verím v to, že sa smart domácnosti budú rozvíjať do čo raz väčších a zároveň aj komplexnejších celkov. Pretože mať jednoduchší prístup a prehľad o všetkom čo sa v domácnosti deje je veľmi užitočnou vecou. Dokážu sa vďaka tomu zefektívniť celkové náklady na údržbu domácnosti a tým pádom aj znížiť výdavky, ktoré často začínajú na malých sumách, avšak postupom času sú to väčšie a väčšie sumy. Sú však inteligentné domácnosti cenovo náročné ? Áno sú, pretože by som si dovolil tvrdiť, že smart domácnosti sú ešte len v plienkach a rok čo rok budú prístupnejšie a prístupnejšie všetkým cenovým kategóriám.
+
 
 \section{IoT (Internet of Things)}\label{IoT}
-Nejaký text a teraz odaz~\ref{IoT:princíp} pokračovanie textu
-Nejaký text a teraz odaz~\ref{IoT:využitie} pokračovanie textu
-Nejaký text a teraz odaz~\ref{IoT:implementácia} pokračovanie textu
-Nejaký text a teraz odaz~\ref{IoTi:funkčnosť} pokračovanie textu
+
+Internet of Thing, skrátene IoT je systém známy ako svet pripojených zariadení, z toho vyplíva, že dokáže spájať rôzne druhy rozdielnych zariadení. Je taktiež definovaný ako koncept tak ako je už spomenuté v zdroji\cite{IoTbasedSmartHome}, ktorý popisuje budúcnosť kde každodenné predmety budú navzájom prepojené a dokážu jeden druhého popísať a rozpoznať. Zariadenia v IoT komunikujú prostredníctvom IP adries bez ľudskej interakcie. Podrobnejšie popísaný princíp si prejdeme v časti~\ref{IoT:princíp}. IoT je systém využiteľný v každom odvetví, na ktoré si len dokážete spomenúť~\ref{IoT:využitie}. V neposlednom rade si zhodnotíme funkčnosť IoT a to v sekcií~\ref{IoTi:funkčnosť}.
+
 
 \subsection{Princíp fungovania}\label{IoT:princíp}
 
 \subsection{Možnosti využitia}\label{IoT:využitie}
 
-\subsection{Implementácia}\label{IoT:implementácia}
-
 \subsection{Celková funkčnosť a spoľahlivosť}\label{IoTi:funkčnosť}
 
+\section{Zabezpečenie}\label{zabezpečenie}
 
-\section{Smart domácnosti}\label{zabezpečenie}
+Zabezpečenie, pri zakomponovaní rôznych zariadení ako napríklad kamera, pohybový senzor, inteligentné zámky a podobne, môžeme získať plnú kontrolu nad domom, aj keď sme mimo neho. Systém, ktorý je prepojený s internetom dokáže upozorniť majiteľa pri nežiadanom vniknutí prostredníctvom aplikácie, do ktorej cez internetu prepošle systém upozornenie. Následne si môže používateľ cez kameru skontrolovať, čo sa v jeho dome deje. Taktiež môže aplikáciou odomknúť dvere alebo ich zamknúť, pretože sa stáva, že ich nezamkneme alebo máme pocit, že sme ich nezamkli. Výhody a nevýhody zabezpečenia inteligentných domácností si priblížime v časti~\ref{zabezpečenie:vyhody}. Existujú rôzne typy a spôsoby zabezpečenia, ktoré sú podrobnejšie popísané v sekcií~\ref{zabezpečenie:druhy}.
 
-Nejaký text a teraz odaz~\ref{zabezpečenie:vyhody} pokračovanie textu
-Nejaký text a teraz odaz~\ref{zabezpečenie:druhy} pokračovanie textu
+
 Nejaký text a teraz odaz~\ref{zabezpečenie:nástroje} pokračovanie textu
 
 \subsection{Využitie}\label{zabezpečenie:vyhody}
-dasdad
+
+Zabezečenie je dôležitou súčasťou každej domácnosti, či už je inteligentná alebo nie. Moderní zlodeji sú čím ďalej tým vynaliezavejší, a preto musia zabezpečenia byť čoraz komplexnejšie a hlavne spolahlivejšie.
+
 \subsection{Klady a zápory}\label{zabezpečenie:druhy}
 
 \subsection{Využívané zariadenia}\label{zabezpečenie:nástroje}
 
 
 
-V modernej dobe, kedy sa všetko automatizuje,to nie je ináč ani pri domácnostiach. Implementujú sa rôzne rozšírenia, ktoré pomáhajú ľuďom pri obsluhovaní a celkovom fungovaní domácnosti, či už to je vykurovanie, osvetlenie, zabezpečenie a podobne. Všetko toto dokážeme využívať vďaka systému IoT (Internet of Things). Teoreticky aj prakticky dokážeme premeniť náš smartfón na plne funkčný ovládač, ktorým kontrolujeme, meníme, sledujeme všetko to, čo zapadá pod inteligentnú domácnosť.  Zabezpečenie, pri zakomponovaní rôznych zariadení ako napríklad kamera, pohybový senzor, inteligentné zámky a podobne, môžeme získať plnú kontrolu nad domom, aj keď sme mimo neho. Systém, ktorý je prepojený s internetom dokáže upozorniť majiteľa pri nežiadanom vniknutí prostredníctvom aplikácie, do ktorej cez internetu prepošle systém upozornenie. Následne si môže používateľ cez kameru skontrolovať, čo sa v jeho dome deje. Taktiež môže aplikáciou odomknúť dvere alebo ich zamknúť, pretože sa stáva, že ich nezamkneme alebo máme pocit, že sme ich nezamkli.
-
-
 \section{Záver} \label{zaver}
 
+Zhodnotenie celého článku, čo sme sa dozvedeli...
 
-
-
-\section{Nejaká časť} \label{nejaka}
-
-Z obr.~\ref{f:rozhod} je všetko jasné. 
-
-\begin{figure*}[tbh]
-\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
-\end{figure*}
-
-
-
-\section{Iná časť} \label{ina}
-
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
-
-
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
-
-Niekedy treba uviesť zoznam:
-
-\begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
-\end{itemize}
-
-Ten istý zoznam, len číslovaný:
-
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
-
-
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-
-
-
-\section{Dôležitá časť} \label{dolezita}
-
-
-
-
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
-
-
-
-
-
-%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
